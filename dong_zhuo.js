@@ -58,6 +58,9 @@ const dong_zhuo = ((Nums) => {
 	return (num) => finisher(demolish(num))
 })({
 	350234: "350234",
+	17: "3+5+0+2+3+4",
+	15: "3 \\times 5+0 \\times 2 \\times 3 \\times 4",
+	13: "3 \\times 5+0-2 \\times 3+4",
 	10: "(3+5+0+2 \\times 3-4)",
 	9: "3+5+0+2+3-4",
 	8: "(3+5+0 \\times 2 \\times 3 \\times 4)",
