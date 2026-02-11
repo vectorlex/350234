@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>恶臭数字论证器</title>
+	<title>苦命鸳鸯论证器</title>
 	<meta name="viewport" content="width=device-width,user-scalable=0">
-	<meta name="description" content="数字恶臭化工具">
+	<meta name="description" content="数字350234化工具">
 
 	<script>
 		window.MathJax = {
@@ -207,7 +207,7 @@
 </head>
 
 <body>
-	<a href="https://github.com/vectorlex/homo" class="github-corner" aria-label="查看史山"><svg width="80" height="80"
+	<a href="https://github.com/vectorlex/350234" class="github-corner" aria-label="查看史山"><svg width="80" height="80"
 			viewBox="0 0 250 250" style="fill:#ffffff; color:#1b1b1f; position: absolute; top: 0; border: 0; right: 0;"
 			aria-hidden="true">
 			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" />
@@ -225,21 +225,21 @@
 
 	<footer>
 		<p>请支持原项目：</p>
-		<a href="https://github.com/itorr/homo">https://github.com/itorr/homo</a>
+		<a href="https://github.com/itorr/dong_zhuo">https://github.com/itorr/dong_zhuo</a>
 	</footer>
 
-	<script src="homo.js"></script>
+	<script src="dong_zhuo.js"></script>
 	<script>
 		if (typeof module === 'undefined') {
-			window.homo = homo;
+			window.dong_zhuo = dong_zhuo;
 		}
 
 		window.addEventListener('DOMContentLoaded', () => {
-			update_homo();
-			document.getElementById('input1').oninput = update_homo;
+			update_dong_zhuo();
+			document.getElementById('input1').oninput = update_dong_zhuo;
 		});
 
-		function update_homo() {
+		function update_dong_zhuo() {
 			const input1 = document.getElementById('input1');
 			const output1 = document.getElementById('output1');
 			const container = document.getElementById('container');
@@ -261,7 +261,7 @@
 
 			setTimeout(() => {
 				try {
-					const formula = homo(num1);
+					const formula = dong_zhuo(num1);
 
 					const latex_expression = formula.startsWith('$') ? formula : `$${formula}$`;
 
@@ -284,7 +284,7 @@
 		}
 
 		function init() {
-			update_homo();
+			update_dong_zhuo();
 		}
 
 		if (document.readyState === 'loading') {
